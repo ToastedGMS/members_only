@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/signup&login.css" />
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<header>
+			<div class="header-links">
+				<a href="/login">Already signed up? Login</a>
+				<a href="/">Home</a>
+			</div>
+		</header>
+
+		<div class="main">
+			<h1>Please fill in sign up information</h1>
+			<span>All fields are required!</span>
+			<% if (error) { %>
+			<p style="color: red">Error: <%= error %></p>
+			<% } %> <% if (message) { %>
+			<p style="color: green">Message: <%= message %></p>
+			<% } %>
+			<form action="/signup" method="post" class="signup-form">
+				<div class="form-group">
+					<label for="firstName">First Name:</label>
+					<input type="text" name="firstName" id="firstName" required />
+				</div>
+
+				<div class="form-group">
+					<label for="lastName">Last Name:</label>
+					<input type="text" name="lastName" id="lastName" required />
+				</div>
+
+				<div class="form-group">
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" required />
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required />
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						minlength="6"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="confirmPassword">Confirm Password:</label>
+					<input
+						type="password"
+						name="confirmPassword"
+						id="confirmPassword"
+						minlength="6"
+						required
+					/>
+				</div>
+
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/homepage.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		/>
+		<title>Home</title>
+	</head>
+	<body>
+		<header>
+			<div class="header-links">
+				<div>
+					<a href="/dashboard">Dashboard</a>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<% if (messages && messages.length > 0) { %> <%
+			messages.forEach(function(message) { %>
+			<div class="message-container">
+				<div class="message-content">
+					<h2 class="message-title"><%= message.title %></h2>
+					<p class="message-text"><%= message.text %></p>
+					<% if (isUserMember) { %>
+					<span class="message-info">
+						Posted on: <%= message.formattedTimestamp %> by <%= message.username
+						%>
+					</span>
+					<% } %>
+				</div>
+				<% if (isUserAdmin) { %>
+				<form action="/" method="post" class="delete-form">
+					<input type="hidden" name="messageId" value="<%= message.id %>" />
+					<button type="submit" class="delete-button">
+						<i class="fa-regular fa-trash-can"></i>
+					</button>
+				</form>
+				<% } %>
+			</div>
+			<% }); %> <% } else { %>
+			<p>No messages available.</p>
+			<% } %>
+		</div>
+	</body>
+</html>

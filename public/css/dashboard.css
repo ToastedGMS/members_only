@@ -1,0 +1,88 @@
+header {
+	margin-bottom: 2rem;
+	background-color: rgb(218, 110, 110);
+	padding: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.header-links {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.main {
+	margin: 0 auto;
+	width: 80%;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: rgb(218, 110, 110);
+	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2); /* Left and right shadows */
+}
+
+.secret-code-form {
+	max-width: 80%; /* Limits the width of the form */
+	margin: 20px auto; /* Centers the form horizontally */
+	padding: 20px;
+	border: 1px solid #ccc; /* Adds a border */
+	border-radius: 5px; /* Rounds the corners */
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+	background-color: #f9f9f9; /* Light background */
+}
+
+.message-form {
+	max-width: 80%; /* Limits the width of the form */
+	margin: 20px auto; /* Centers the form horizontally */
+	padding: 20px;
+	border: 1px solid #ccc; /* Adds a border */
+	border-radius: 5px; /* Rounds the corners */
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+	background-color: #f9f9f9; /* Light background */
+}
+
+.form-group {
+	margin-bottom: 15px; /* Space between each input group */
+}
+
+label {
+	display: block; /* Makes labels block elements */
+	margin-bottom: 5px; /* Space between label and input */
+	font-weight: bold; /* Makes the label text bold */
+}
+
+input,
+textarea {
+	width: 80%; /* Makes input fields and textarea full width */
+	padding: 10px; /* Adds padding inside fields */
+	border: 1px solid #ccc; /* Border around fields */
+	border-radius: 4px; /* Rounded corners */
+	font-size: 16px; /* Increases font size */
+}
+
+textarea {
+	resize: none; /* Prevents resizing of the textarea */
+}
+
+button {
+	padding: 10px 15px; /* Padding for the button */
+	background-color: #007bff; /* Button background color */
+	color: white; /* Button text color */
+	border: none; /* Removes border */
+	border-radius: 4px; /* Rounded corners */
+	cursor: pointer; /* Pointer cursor on hover */
+	font-size: 16px; /* Increases font size */
+}
+
+button:hover {
+	background-color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,72 @@
+header {
+	margin-bottom: 2rem;
+	background-color: rgb(218, 110, 110);
+	padding: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.header-links {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.main {
+	margin: 0 auto;
+	width: 80%;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: rgb(218, 110, 110);
+	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.2); /* Left and right shadows */
+}
+
+.main {
+	max-width: 800px; /* Maximum width for the main container */
+	margin: 20px auto; /* Centers the main container */
+	padding: 20px;
+}
+
+.message-container {
+	background-color: #f9f9f9; /* Light background for messages */
+	border: 1px solid #ccc; /* Border around message */
+	border-radius: 5px; /* Rounded corners */
+	margin-bottom: 15px; /* Space between messages */
+	padding: 15px; /* Padding inside message container */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.message-title {
+	font-size: 1.5em; /* Larger font for title */
+	margin: 0 0 10px; /* Margin below title */
+}
+
+.message-text {
+	font-size: 1em; /* Normal font size for message text */
+	margin-bottom: 10px; /* Space below message text */
+}
+
+.message-info {
+	font-size: 0.9em; /* Smaller font size for info */
+	color: #555; /* Gray color for info text */
+}
+
+.delete-form {
+	display: inline; /* Keep delete button in line */
+}
+
+.delete-button {
+	background: none; /* No background */
+	border: none; /* No border */
+	cursor: pointer; /* Pointer cursor on hover */
+	color: #e74c3c; /* Red color for delete button */
+	font-size: 1.2em; /* Size for delete icon */
+}
+
+.delete-button:hover {
+	color: #c0392b; /* Darker red on hover */
+}
